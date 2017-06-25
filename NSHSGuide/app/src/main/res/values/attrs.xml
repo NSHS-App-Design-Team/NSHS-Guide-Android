@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="blockImageStyle" type="reference" />
+	<declare-styleable name="block_image">
+		<attr name="fade_color" format="boolean"/>
+	</declare-styleable>
+</resources>

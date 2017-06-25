@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="56dp"
+		android:layout_marginLeft="46dp"
+		android:id="@+id/titleHolder">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="New Text"
+			android:id="@+id/title"
+			android:layout_gravity="center_vertical"
+			style="@style/TextAppearance.AppCompat.Title.Inverse"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="56dp"
+		android:id="@+id/currentRoomHolder"
+		android:layout_below="@+id/titleHolder"
+		android:layout_alignLeft="@+id/titleHolder">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/currentRoomNum"
+			android:textColor="@android:color/white"
+			android:textColorHint="@android:color/white"
+			android:textSize="16sp"
+			android:layout_gravity="center_vertical"
+			android:inputType="number"
+			android:numeric="integer"
+			android:hint="Closest room #"
+			/>
+
+	</FrameLayout>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="?android:attr/listDivider"
+		android:layout_below="@+id/currentRoomHolder"
+		android:id="@+id/divider"
+		android:layout_alignLeft="@+id/titleHolder"/>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="56dp"
+		android:id="@+id/destinationRoomHolder"
+		android:layout_below="@+id/divider"
+		android:layout_alignLeft="@+id/currentRoomHolder">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/destinationRoomNum"
+			android:textColor="@android:color/white"
+			android:textColorHint="@android:color/white"
+			android:textSize="16sp"
+			android:layout_gravity="center_vertical"
+			android:inputType="number"
+			android:numeric="integer"
+			android:hint="Destination room #"
+			/>
+
+	</FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="grey_icons">#888888</color>
+	<color name="empty_state_bg">#bdbdbd</color>
+	<color name="list_selected">#DDDDDD</color>
+	<color name="view_pager_indicator_other_page">#33bdbdbd</color>
+	<!--APP'S MAIN COLOR-->
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorPrimaryDarker">#1A237E</color>
+	<color name="colorPrimaryLight">#E8EAF6</color>
+	<!--APP'S CONTRASTING COLOR-->
+	<color name="accent">#FF6D00</color>
+	<color name="accentDark">#E65100</color>
+	<!--all colors for blocks A~J-->
+	<color name="redDark">#E93230</color>
+	<color name="redLight">#FFEBEE</color>
+	<color name="red">#F16033</color>
+	<color name="pinkDark">#EA3B66</color>
+	<color name="pinkLight">#FCE4EC</color>
+	<color name="pink">#F06292</color>
+	<color name="purpleDark">#9E3EB2</color>
+	<color name="purpleLight">#F3E5F5</color>
+	<color name="purple">#BA68C8</color>
+	<color name="blueDark">#2881F1</color>
+	<color name="blueLight">#E3F2FD</color>
+	<color name="blue">#42A5F5</color>
+	<color name="cyanDark">#00A1C3</color>
+	<color name="cyanLight">#E0F7FA</color>
+	<color name="cyan">#00BCD4</color>
+	<color name="tealDark">#178272</color>
+	<color name="tealLight">#E0F2F1</color>
+	<color name="teal">#26A69A</color>
+	<color name="lightGreenDark">#5DAB2C</color>
+	<color name="lightGreenLight">#F1F8E9</color>
+	<color name="lightGreen">#8BC34A</color>
+	<color name="amberDark">#FFC42F</color>
+	<color name="amberLight">#FBF4DE</color>
+	<color name="amber">#FFD54F</color>
+	<color name="orangeDark">#FF8926</color>
+	<color name="orangeLight">#FBE9E7</color>
+	<color name="orange">#FFAB40</color>
+	<color name="blueGreyDark">#64808E</color>
+	<color name="blueGreyLight">#DAE1E4</color>
+	<color name="blueGrey">#90A4AE</color>
+</resources>

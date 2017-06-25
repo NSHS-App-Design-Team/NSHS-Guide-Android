@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/list_one_line_text_only_height"
+	android:text="Subheader"
+	android:id="@+id/subheaderText"
+	android:textSize="@dimen/list_secondary_text_size"
+	android:textColor="@color/colorPrimary"
+	android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	android:gravity="center_vertical"
+	android:singleLine="true"
+	android:textStyle="bold"/>

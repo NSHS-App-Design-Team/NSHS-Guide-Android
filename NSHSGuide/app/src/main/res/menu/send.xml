@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:nshsGuide="http://schemas.android.com/apk/res-auto">
+	<item android:id="@+id/sendButton"
+	      android:icon="@drawable/ic_send_24dp"
+	      android:title="@string/action_send"
+	      nshsGuide:showAsAction="always"/>
+</menu>

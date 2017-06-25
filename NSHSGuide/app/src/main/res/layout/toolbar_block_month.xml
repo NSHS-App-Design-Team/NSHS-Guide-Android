@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/appBarLayout"
+	app:expanded="false">
+	<android.support.design.widget.CollapsingToolbarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:titleEnabled="false"
+		app:layout_scrollFlags="scroll|exitUntilCollapsed">
+		<com.prolificinteractive.materialcalendarview.MaterialCalendarView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:mcv_showOtherDates="all"
+			android:id="@+id/blockMonthView"
+			android:layout_marginTop="?attr/actionBarSize"/>
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:layout_collapseMode="pin"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+	</android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

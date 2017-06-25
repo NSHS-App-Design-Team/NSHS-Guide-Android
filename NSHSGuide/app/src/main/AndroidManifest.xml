@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nshsappdesignteam.nshsguide" >
+
+    <!-- PERMISSIONS REQUIRED FOR GCM -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission
+        android:name="com.nshsappdesignteam.nshsguide.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.nshsappdesignteam.nshsguide.permission.C2D_MESSAGE" />
+
+    <!-- OTHER PERMISSIONS -->
+    <!-- ensures block notifications are turned back on after reboot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- checks if connection is working before querying database for info -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- vibrate when we receive general notification -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+	    android:backupAgent=".MyBackupAgent">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.tutorial.TutorialActivity"/>
+        <activity
+            android:name=".tabs.addTeacher.AddTeacherActivity"
+            android:label="@string/activity_add_teacher"/>
+        <activity
+            android:name=".tabs.settings.SettingsActivity"
+            android:label="@string/tab_settings"/>
+        <activity
+            android:name=".tabs.feedback.FeedbackActivity"
+            android:label="@string/tab_feedback"/>
+	    <activity
+		    android:name=".tabs.requestTeacher.RequestTeacherActivity"
+	        android:label="@string/tab_request_teacher"/>
+	    <activity
+		    android:name=".tictactoe.TicTacToeActivity"
+		    android:label="@string/tab_tictactoe"/>
+
+        <!-- GCM STUFF -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.nshsappdesignteam.nshsguide" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GcmListener"
+                 android:exported="false">
+	        <intent-filter>
+		        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+	        </intent-filter>
+        </service>
+	   <service
+		    android:name=".MyInstanceIdListener"
+		    android:exported="false">
+		    <intent-filter>
+			    <action android:name="com.google.android.gms.iid.InstanceID"/>
+		    </intent-filter>
+	    </service>
+
+        <!-- FUTURE NOTIFICATIONS -->
+        <receiver
+            android:name=".BlockNotificationReceiver"
+            android:process=":remote" />
+	    <!-- redo notifications on reboot (they're automatically cleared) -->
+        <receiver android:name=".RebootBroadcastReceiver"
+                  android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

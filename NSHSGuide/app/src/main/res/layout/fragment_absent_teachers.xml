@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/swipeContainer">
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/absentTeacherRecycler"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingBottom="@dimen/fab_padding"
+			android:clipToPadding="false"/>
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+	<!-- EMPTY STATE STUFF -->
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		style="@style/RelativeLayoutEmptyState">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/empty_state_no_absent_teacher"
+			style="@style/TextView.EmptyState"/>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/empty_state_no_absent_teacher"
+			style="@style/ImageViewEmptyState"/>
+	</RelativeLayout>
+
+	<android.support.design.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/coordinatorLayout"
+		android:layout_alignParentBottom="true">
+
+		<android.support.design.widget.FloatingActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/activity_horizontal_margin"
+			android:layout_gravity="bottom|right"
+			app:borderWidth="0dp"
+			android:src="@drawable/ic_group_add_24dp"
+			android:id="@+id/fab"/>
+
+	</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

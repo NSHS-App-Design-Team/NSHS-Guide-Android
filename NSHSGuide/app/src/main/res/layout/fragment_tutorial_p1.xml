@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent">
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/tutorial_title_absent_teachers"
+		android:id="@+id/tutorialTitleText"
+		android:textSize="@dimen/tutorial_title_text_size"
+		android:gravity="center"
+		android:layout_marginTop="@dimen/tutorial_title_top_margin"
+		android:layout_marginLeft="@dimen/tutorial_title_horizontal_margin"
+		android:layout_marginRight="@dimen/tutorial_title_horizontal_margin"
+		style="@style/TextView.Tutorial"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"/>
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/tutorial_absent_teachers"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:paddingBottom="@dimen/tutorial_picture_bottom_margin"
+		android:gravity="center_horizontal">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/activity_vertical_margin"
+			android:id="@+id/absentTeacherKey">
+
+			<com.nshsappdesignteam.nshsguide.helper.BlockImage
+				android:layout_width="@dimen/list_primary_image_size"
+				android:layout_height="@dimen/list_primary_image_size"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:text="A"
+				android:background="@drawable/block_bg_a"
+				android:textSize="@dimen/list_primary_text_in_image_size"
+				android:enabled="false"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="="
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:textColor="@android:color/white"
+				style="@style/TextView"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tutorial_absent_teachers_key_absent"
+				android:textColor="@android:color/white"
+				style="@style/TextView"/>
+
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/presentTeacherKey"
+			android:layout_marginTop="@dimen/activity_vertical_margin"
+			>
+
+			<com.nshsappdesignteam.nshsguide.helper.BlockImage
+				android:layout_width="@dimen/list_primary_image_size"
+				android:layout_height="@dimen/list_primary_image_size"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:text="A"
+				android:background="@drawable/block_bg_a"
+				android:textSize="@dimen/list_primary_text_in_image_size"
+				android:enabled="false"
+				app:fade_color="true"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="="
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:textColor="@android:color/white"
+				style="@style/TextView"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tutorial_absent_teachers_key_present"
+				android:textColor="@android:color/white"
+				style="@style/TextView"/>
+
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

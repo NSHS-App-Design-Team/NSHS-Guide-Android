@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NSHS Guide</string>
+	<string name="dialog_title_pick_block">Choose block</string>
+	<string name="dialog_title_info">Info</string>
+	<string name="action_check">Done</string>
+	<string name="action_send">Send</string>
+	<string name="action_delete">Delete selected</string>
+	<string name="toast_error_no_internet">Unable to connect to the internet</string>
+	<string name="notification_absence_list_update">Absence list updated</string>
+	<string name="notification_blocks_cancelled_zero">No classes cancelled</string>
+	<string name="notification_blocks_cancelled_many">block(s) cancelled</string>
+	<string name="notification_announcement">Announcement</string>
+	<string name="notification_teacher_request_approved">Request approved</string>
+	<string name="notification_teacher_request_name">Teacher: %1$s</string>
+	<string name="notification_teacher_request_denied">Request denied</string>
+	<string name="transition_target_block_image">transitionTargetBlockImage</string>
+	<string name="transition_target_block_1_image">transitionTargetBlock1Image</string>
+	<string name="transition_target_block_2_image">transitionTargetBlock2Image</string>
+	<string name="transition_target_block_3_image">transitionTargetBlock3Image</string>
+	<string name="transition_target_block_4_image">transitionTargetBlock4Image</string>
+
+	<string name="free_block">Free block</string>
+	<string name="cancelled_class">Cancelled class</string>
+	<string name="lunch">Lunch</string>
+	<string-array name="lunches">
+		<item name="first_lunch">@string/first_lunch</item>
+		<item name="second_lunch">@string/second_lunch</item>
+		<item name="third_lunch">@string/third_lunch</item>
+	</string-array>
+	<string name="first_lunch">1st Lunch</string>
+	<string name="second_lunch">2nd Lunch</string>
+	<string name="third_lunch">3rd Lunch</string>
+	<string name="room">Room</string>
+
+	<!-- SETTINGS KEYS (DO NOT CHANGE VALUES BETWEEN VERSIONS OR TRANSLATE -->
+	<string name="key_registered_in_database">registrationIDSent</string>
+	<string name="key_reg_id">regID</string>
+	<string name="key_absent_teachers">absentTeachers</string>
+	<string name="key_absent_teachers_update_date">absentTeachersUpdateDate</string>
+	<string name="key_your_absent_teachers">yourAbsentTeachers</string>
+	<string name="key_announcement">announcement</string>
+	<string name="key_general_notifications_on">generalNotificationsOn</string>
+	<string name="key_notification_vibrate_on">notificationVibrateOn</string>
+	<string name="key_notification_light_on">notificationLightOn</string>
+	<string name="key_block_notifications_on">blockNotificationsOn</string>
+	<string name="key_block_notifications_time_adjust">blockNotificationsTimeAdjust</string>
+	<string name="key_default_landing_page">defaultLandingPage</string>
+	<string name="key_notifications_set">notificationsSet</string>
+	<string name="key_developer_mode_on">developerModeOn</string>
+	<string name="key_special_schedule">specialSchedule</string>
+	<string name="key_special_schedule_dates">specialScheduleDates</string>
+	<string name="key_first_run">firstRun</string>
+	<string name="key_teachers_list">teachersList</string>
+	<string name="key_sync_on">syncOn</string>
+	<string name="key_was_daylight_savings_on_last_check">wasDaylightSavingsOnLastCheck</string>
+	<string name="key_current_version">currentVersion</string>
+	<string name="key_name">name</string>
+	<string name="key_email">email</string>
+
+	<!-- ABSENT TEACHERS -->
+	<string name="tab_absent_teachers">Absent Teachers</string>
+	<string name="subheader_announcement">Announcement</string>
+	<string name="subheader_your_teachers">Your Teachers</string>
+	<string name="subheader_other_teachers">Other Teachers</string>
+	<string name="empty_state_no_absent_teacher">No absent teachers found.\nSwipe down to update</string>
+
+	<!-- YOUR TEACHERS -->
+	<string name="tab_your_teachers">Your Teachers</string>
+	<string name="empty_state_no_teacher_added">You have no teachers saved</string>
+
+	<!-- BLOCKS -->
+	<string name="tab_blocks">Blocks</string>
+	<string name="action_block_display_day">Day</string>
+	<string name="action_block_display_month">Month</string>
+	<string name="empty_state_no_school">No school!</string>
+
+	<!-- SETTINGS -->
+	<string name="tab_settings">Settings</string>
+	<string name="empty">%1s</string>
+	<string name="settings_category_general_notifications">Notifications</string>
+	<string name="settings_general_notifications">General notifications</string>
+	<string name="settings_notifications_vibrate">Vibrate</string>
+	<string name="settings_notifications_light">Light</string>
+	<string name="settings_category_block_notifications">Next block notifications</string>
+	<string name="settings_block_notifications">Next block notifications</string>
+	<string name="settings_notification_time_adjust">Show next block in notifications</string>
+	<string-array name="entries_time_adjust">
+		<item>5 minutes before it starts</item>
+		<item>10 minutes before it starts</item>
+		<item>15 minutes before it starts</item>
+	</string-array>
+	<integer-array name="values_time_adjust">
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+	</integer-array>
+	<string name="settings_category_app">App</string>
+	<string name="settings_sync">Sync</string>
+	<string name="summary_sync">To see in-app updates without refreshing</string>
+	<string name="settings_default_landing_page">Default page</string>
+	<string-array name="entries_default_landing_page">
+		<item>@string/tab_absent_teachers</item>
+		<item>@string/tab_blocks</item>
+	</string-array>
+	<string-array name="values_default_landing_page">
+		<item>absentTeachers</item>
+		<item>blocks</item>
+	</string-array>
+
+	<!-- FEEDBACK -->
+	<string name="tab_feedback">Feedback</string>
+	<string name="feedback_hint_name">Name (required)</string>
+	<string name="feedback_hint_email">Email</string>
+	<string name="feedback_hint_feedback">Feedback (required)</string>
+	<string name="toast_error_fields_incomplete">Required fields are incomplete</string>
+	<string name="toast_feedback_sent">Feedback sent!</string>
+	<string name="toast_developer_mode_on_message">Ho ho ho, you turned on developer mode!</string>
+	<string name="club_info">Created by students in NSHS App Design Team. Join us Mondays and Wednesdays J block in room 4105.</string>
+
+	<!-- REQUEST TEACHER -->
+	<string name="tab_request_teacher">Request a Teacher</string>
+	<string name="request_teacher_hint_first_name">First name (required)</string>
+	<string name="request_teacher_hint_last_name">Last name (required)</string>
+	<string name="request_teacher_info">Request that a teacher who is currently not on the teacher\'s list be added to the list. You will receive a notification when your request is approved.</string>
+	<string name="toast_teacher_request_sent">Teacher request sent!</string>
+
+	<!-- ADD TEACHER -->
+	<string name="activity_add_teacher">Add a Teacher</string>
+	<string name="add_teacher_hint_name">Teacher Name</string>
+	<string name="add_teacher_hint_subject">Subject (optional)</string>
+	<string name="add_teacher_hint_room_number">Room Number (optional)</string>
+	<string name="dialog_title_cannot_save">Your teacher can\'t be saved because…</string>
+	<string name="dialog_message_cannot_save">Are you sure you want to exit without saving?</string>
+	<string name="dialog_message_teacher_nonexistent">%1$s is not a teacher at NSHS.</string>
+	<string name="dialog_message_no_teacher">No teacher\'s name was entered.</string>
+	<string name="dialog_message_no_blocks_selected">No block was selected.</string>
+	<string name="dialog_title_no_teachers_list">No teachers list saved</string>
+	<string name="dialog_message_no_teachers_list">Turn on the internet and press the refresh button</string>
+	<string name="toast_downloading_teachers_list">Downloading teachers list…</string>
+	<string name="toast_saved_teacher">Teacher saved</string>
+
+	<!-- TUTORIAL -->
+	<string name="tutorial_title_absent_teachers">See the absent teachers</string>
+	<string name="tutorial_title_events">Add upcoming events</string>
+	<string name="tutorial_title_blocks">Check which blocks you have</string>
+	<string name="tutorial_title_your_teachers">Add your own teachers so it all works!</string>
+	<string name="tutorial_absent_teachers_key_present">Present teacher</string>
+	<string name="tutorial_absent_teachers_key_absent">Absent teacher</string>
+	<string name="tab_tictactoe">Tic-Tac-Toe</string>
+</resources>

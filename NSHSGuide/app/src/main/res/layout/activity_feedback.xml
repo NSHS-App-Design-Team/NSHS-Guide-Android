@@ -1,0 +1,96 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/toolbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:layout_marginRight="@dimen/activity_horizontal_margin"
+		android:layout_marginTop="@dimen/activity_vertical_margin">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/ic_person_24dp"
+			android:tint="@color/grey_icons"/>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin">
+			<android.support.design.widget.TextInputEditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/nameText"
+				android:hint="@string/feedback_hint_name"
+				android:singleLine="true"
+				android:inputType="textCapWords|textPersonName"/>
+		</android.support.design.widget.TextInputLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:layout_marginRight="@dimen/activity_horizontal_margin"
+		android:layout_marginTop="@dimen/activity_vertical_margin">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/ic_email_24dp"
+			android:tint="@color/grey_icons"/>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin">
+			<android.support.design.widget.TextInputEditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/emailText"
+				android:hint="@string/feedback_hint_email"
+				android:singleLine="true"
+				android:inputType="textEmailAddress"/>
+		</android.support.design.widget.TextInputLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:layout_marginRight="@dimen/activity_horizontal_margin"
+		android:layout_marginTop="@dimen/activity_vertical_margin">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/ic_subject_24dp"
+			android:tint="@color/grey_icons"/>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin">
+			<android.support.design.widget.TextInputEditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/feedbackText"
+				android:hint="@string/feedback_hint_feedback"/>
+		</android.support.design.widget.TextInputLayout>
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/club_info"
+		android:gravity="center"
+		android:layout_margin="@dimen/activity_vertical_margin"
+		style="@style/TextView.Secondary"/>
+</LinearLayout>

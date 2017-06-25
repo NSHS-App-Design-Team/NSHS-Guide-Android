@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView
+		android:id="@+id/column0Image"
+		style="@style/TicTacToe"/>
+
+	<View
+		android:layout_width="@dimen/tictactoe_grid_size"
+		android:layout_height="wrap_content"
+		android:background="@android:color/black"
+		android:id="@+id/column01Divider"
+		android:layout_toRightOf="@+id/column0Image"
+		android:layout_alignBottom="@id/column0Image"/>
+
+	<ImageView
+		android:id="@+id/column1Image"
+		android:layout_toRightOf="@id/column01Divider"
+		style="@style/TicTacToe"/>
+
+	<View
+		android:layout_width="@dimen/tictactoe_grid_size"
+		android:layout_height="wrap_content"
+		android:id="@+id/column12Divider"
+		android:layout_toRightOf="@id/column1Image"
+		android:background="@android:color/black"
+		android:layout_alignBottom="@id/column0Image"/>
+
+	<ImageView
+		android:id="@+id/column2Image"
+		android:layout_toRightOf="@id/column12Divider"
+		style="@style/TicTacToe"/>
+</android.support.percent.PercentRelativeLayout>

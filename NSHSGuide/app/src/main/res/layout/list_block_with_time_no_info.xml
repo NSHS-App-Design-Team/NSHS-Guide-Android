@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/list_one_line_with_image_height"
+	android:background="?android:attr/selectableItemBackground">
+
+	<com.nshsappdesignteam.nshsguide.helper.BlockImage
+		android:layout_width="@dimen/list_primary_image_size"
+		android:layout_height="@dimen/list_primary_image_size"
+		android:text="A"
+		android:id="@+id/blockImage"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:textSize="@dimen/list_primary_text_in_image_size"
+		android:background="@drawable/block_bg_a"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:layout_centerVertical="true"
+		android:enabled="false"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Teacher name or event title"
+		android:id="@+id/teacherText"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="@dimen/list_text_left_margin"
+		android:layout_alignParentLeft="true"
+		android:layout_toLeftOf="@+id/timeText"
+		android:layout_marginRight="@dimen/activity_horizontal_margin"
+		android:singleLine="true"
+		style="@style/TextView"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="10:08 ~ 10:08"
+		android:id="@+id/timeText"
+		android:layout_marginRight="@dimen/activity_horizontal_margin"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		style="@style/TextView.Secondary"/>
+
+</RelativeLayout>

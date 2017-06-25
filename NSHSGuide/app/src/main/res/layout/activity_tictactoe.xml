@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!--<android.support.design.widget.CoordinatorLayout
+		android:id="@+id/coordinatorLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentBottom="true">
+
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/fab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|right"
+			android:layout_margin="@dimen/activity_horizontal_margin"
+			android:src="@drawable/ic_refresh_24dp_white"
+			app:borderWidth="0dp"/>
+
+	</android.support.design.widget.CoordinatorLayout>-->
+
+	<LinearLayout
+		android:id="@+id/tictactoeLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="@dimen/activity_vertical_margin"
+		android:orientation="vertical">
+
+		<include
+			android:id="@+id/row2Layout"
+			layout="@layout/tictactoe_row"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/tictactoe_grid_size"
+			android:background="@android:color/black"/>
+
+		<include
+			android:id="@+id/row1Layout"
+			layout="@layout/tictactoe_row"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/tictactoe_grid_size"
+			android:background="@android:color/black"/>
+
+		<include
+			android:id="@+id/row0Layout"
+			layout="@layout/tictactoe_row"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/nextPlayer"
+		style="@style/TextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tictactoeLayout"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="@dimen/activity_horizontal_margin"
+		android:text="Player is next"
+		android:textSize="@dimen/tictactoe_next_player_text_size"/>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Button"
+		android:layout_below="@id/nextPlayer"
+		android:layout_centerHorizontal="true"
+		style="@android:style/Widget.Button"/>
+
+</RelativeLayout>
+

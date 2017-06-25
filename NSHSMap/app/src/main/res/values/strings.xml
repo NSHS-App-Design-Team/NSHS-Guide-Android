@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">NSHSMap</string>
+	<string name="search_hint">Closest room\'s number</string>
+</resources>

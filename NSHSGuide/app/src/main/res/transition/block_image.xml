@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet>
+	<transition class="com.nshsappdesignteam.nshsguide.helper.animation.BlockImageTransition" />
+	<changeBounds/>
+	<arcMotion/>
+</transitionSet>

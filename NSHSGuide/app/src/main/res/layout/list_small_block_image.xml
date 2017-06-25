@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nshsappdesignteam.nshsguide.helper.BlockImage
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/list_small_block_image_size"
+    android:layout_height="@dimen/list_small_block_image_size"
+    android:layout_marginRight="@dimen/list_small_block_right_margin"
+    android:text="A"
+    android:background="@drawable/block_bg_a"
+    android:textSize="@dimen/list_small_block_text_size"
+    android:enabled="false"/>

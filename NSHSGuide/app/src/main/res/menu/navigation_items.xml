@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group
+		android:id="@+id/menuTop"
+		android:checkableBehavior="single">
+		<item
+			android:id="@+id/tabAbsentTeachers"
+			android:icon="@drawable/ic_absent_teachers"
+			android:title="@string/tab_absent_teachers"/>
+		<item
+			android:id="@+id/tabYourTeachers"
+			android:icon="@drawable/ic_people_24dp"
+			android:title="@string/tab_your_teachers"/>
+		<item
+			android:id="@+id/tabBlocks"
+			android:icon="@drawable/ic_today_24dp"
+			android:title="@string/tab_blocks"/>
+	</group>
+	<group
+		android:id="@+id/menuBottom"
+		android:checkableBehavior="none">
+		<item
+			android:id="@+id/tabSettings"
+			android:icon="@drawable/ic_settings_24dp"
+			android:title="@string/tab_settings"/>
+		<item
+			android:id="@+id/tabFeedback"
+			android:icon="@drawable/ic_feedback_24dp"
+			android:title="@string/tab_feedback"/>
+		<item
+			android:id="@+id/tabRequestTeacher"
+		    android:icon="@drawable/ic_group_add_24dp_black"
+		    android:title="@string/tab_request_teacher"/>
+	</group>
+</menu>
